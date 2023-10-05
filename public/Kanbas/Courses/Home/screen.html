@@ -1,148 +1,349 @@
-<table border="1" width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
+<html>
+  <head>
+    <link rel="stylesheet" href="/Kanbas/lib/styles.css">
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/Kanbas/lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css">
 
-        <td valign="top">
-          <ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussion</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
-    </ul>
-        </td>
-        <td valign="top"><button>Collapse All</button>
-            <button>View Progress</button>
-            <select>
-              <option>Publish All</option>
-              <option>Publish all items and modules</option>
-              <option>UnPublish</option>
-            </select>
-            <button>+ Module</button>
-            <hr />
-            <ul>
-              <li>
-                Week 0 - INTRO
-                <ul>
-                  <li>
-                    LEARNING OBJECTIVES
-                    <ul>
-                      <li>Introduction to the course</li>
-                      <li>Learn what is Web Development</li>
-                      <li>Creating a development environment</li>
-                      <li>Creating a Web Application</li>
-                      <li>Getting started with the 1st assignment</li>
-                    </ul>
-                  </li>
-                  <li>
-                    READING
-                    <ul>
-                      <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                      <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                    </ul>
-                  </li>
-                  <li>
-                    SLIDES
-                    <ul>
-                      <li>
-                        <a href="#">Introduction to Web Developement Links to an external site.
+  </head>
+
+<body>
+
+    <div class="container-fluid">   
+
+
+        <div class="d-block d-md-none">
+          <!-- Menu when screen is too small -->
+          <a href="/Kanbas/KanbasNavigation/index.html">Kanbas Navigator</a>
+          <a href="/Kanbas/Courses/CourseNavigation">Course Navigator</a>
+        </div>
+
+        <div class="row">
+            <!-- col for kanbas navigation -->
+            <div class="d-none d-md-block col-md-1 col-lg-auto wd-bg-color-blue" style="padding: 0;">
+
+                <ul class="wd-kanbas-navigation">
+                    <li>
+                        <i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>
+                    </li>
+                    <li class="wd-account">
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            Account
+                        </a></li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard
                         </a>
-                      </li>
-                      <li>            
-                        <a href="#">Creating an HTTP server with Node.js Links to an external site.
+                    </li>
+                    <li class="wd-active">
+                        <a href="/Kanbas/Courses/Home/screen.html">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            Courses
                         </a>
-                      </li>
-                      <li>            
-                        <a href="#">Creating a React Application Links to an external site.
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        Calendar
+                        
                         </a>
-                      </li>
-                    </ul>
-                  </li>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        Inbox </a></li>
+                    <li><a href="#">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        History</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                        Studio</a></li>
+                    <li><a href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Commons</a></li>
+                    <li><a href="#">
+                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                <br>
+                        Help</a></li>
                 </ul>
-              </li>
-              <li> 
-                Week 1 - HTML
-                <ul>
-                  <li>
-                    LEARNING OBJECTIVES
-                    <ul>
-                      <li>Learn how to create user interfaces withHTML</li>
-                      <li>Keep working on assignment 1</li>
-                      <li>Deploy the assignment to Netlify</li>
-                      
-                    </ul>
-                  </li>
-                  <li>
-                    READING
-                    <ul>
-                      <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                      <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Week 2
-                <ul>
-                  <li>
-                    LEARNING OBJECTIVES
-                    <ul>
-                      <li>Introduction to the course</li>
-                      <li>Introduction to the course website</li>
-                      <li>Introduction to the course tools</li>
-                      <li>Introduction to the course assignments</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul></td>
-        <td valign="top"><h1>Course Status</h1>
-          <button>UnPublish</button>
-          <button>Published</button>
-          <ul>
-          
-              <li><a href="#">Import Existing Content</a></li>
-              <li><a href="#">Import From Commons</a></li>
-              <li><a href="#">Chose Home Page</a></li>
-              <li><a href="#">View Course Stream</a></li>
-          
-              <li><a href="#">New Announcement</a></li>
-              <li><a href="#">New Analytics</a></li>
-              <li><a href="#">View Course Notification</a></li>
-          </ul>
-          
-          <h1>Comming Up</h1>
-          <a href="#">View Calendar</a>
-          <p></p>
-          <ul>
-              <li><a href="#">Lecture CS4550.12631.292419 Sep 7 at 11:45am</a></li>
-              <li><a href="#">Lecture CS4550.12631.292419 Sep 11 at 11:45am</a></li>
-              <li><a href="#">CS5610 06 SP23 Lecture Sep 11 at 6pm</a></li>
-          </ul></td>
-    </tr>
-</table>
+
+            </div>
+            <div class="col-sm-12 col-md-11 ">
+
+                      <div class="row wd-bg-color-green wd-breadcrumbs">
+                      <!-- row for  bread crums -->
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">CS5610.17387.202410</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Modules</li>
+                          </ol>
+                        </nav>
+                        <hr />
+                      </div>
+                      <div class="row">
+                            <div class="d-none d-md-block col-md-3 col-lg-3 wd-bg-color-red">
+                            <!--  course navigation bar div -->
+                            <ul class="wd-course-navigation">
+                                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                                <li><a href="#">Piazza</a></li>
+                                <li><a href="#">Zoom Meetings</a></li>
+                                <li><a href="#">Quizzes</a></li>
+                                <li><a href="#">People</a></li>
+                                <li><a href="#">Panopto Video</a></li>
+                                <li><a href="#">Discussion</a></li>
+                                <li><a href="#">Announcements</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Files</a></li>
+                                <li><a href="#">Rubrics</a></li>
+                                <li><a href="#">Outcomes</a></li>
+                                <li><a href="#">Collaborations</a></li>
+                                <li><a href="#">Syllabus</a></li>
+                                <li><a href="/Kanbas/Courses/Settings/CourseDetails/screen.html">Settings</a></li>
+                        </ul>
+                            </div>
+                            <div class="col-md-9 col-lg-6 wd-bg-color-yellow ">
+                                      
+                              <div class="container-fluid wd-modules-buttons">
+                                <div class="row">
+                                 <div class="col-12">
+                                   <div class="float-end">
+                                     <button type="button" class="btn btn-secondary">Collapse All</button>
+                                     <button type="button" class="btn btn-secondary">View Progress</button>
+                                     <div class="dropdown d-inline-block">
+                                       <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+                                       aria-expanded="false">
+                                         <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
+                                         Publish All
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item" href="#">Action</a></li>
+                                         <li><a sclass="dropdown-item" href="#">Another action</a></li>
+                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                       </ul>
+                                     </div>
+                                     <button type="button" class="btn btn-danger">
+                                       <i class="fa fa-plus" aria-hidden="true"></i>
+                                        Module
+                                     </button>
+                                     <button type="button" class="btn btn-secondary">
+                                       &ensp;
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                       &ensp;
+                                     </button>
+                                    
+                                    
+                                     </div>
+                                   </div>
+                                 </div>
+                               
+                               
+                               <hr />
+                               
+                               
+                               <div class="row wd-modules-lists">
+                                 <div class="col-12">
+                                   <ul class="list-group">
+                                       <li class="list-group-item list-group-item-secondary d-flex align-items-center titlebar">
+                                          
+                                           <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                           Week 0 - INTRO
+                                    
+                                           <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                           <i class="fa fa-plus" aria-hidden="true" style="margin-right: 10px;"></i>
+                                           <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                       </li>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         LEARNING OBJECTIVES
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Introduction to the course
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Learn what is Web Development
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Creating a development environment
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Creating a Web Application
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         READING
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Full Stack Developer - Chapter 1 - Introduction
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                       <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                       
+                                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        
+                                       </a>
+                                   </ul>
+                                 </div>
+                               </div>
+                               
+                               <br><br>
+                               
+                               
+                               <div class="row wd-modules-lists">
+                                 <div class="col-12">
+                                   <ul class="list-group">
+                                     <li class="list-group-item list-group-item-secondary d-flex align-items-center titlebar">
+                                        
+                                         <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                         Week 1 - HTML
+                                  
+                                         <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-plus" aria-hidden="true" style="margin-right: 10px;"></i>
+                                         <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                     </li>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       LEARNING OBJECTIVES
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Introduction to the course
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Learn what is Web Development
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Creating a development environment
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Creating a Web Application
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       READING
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Full Stack Developer - Chapter 1 - Introduction
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                     <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                       <i class="fa fa-align-justify me-2" aria-hidden="true"></i>
+                                     
+                                       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                
+                                       <i class="fa fa-check-circle ms-auto" aria-hidden="true" style="margin-right: 10px;"></i>
+                                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                      
+                                     </a>
+                                 </ul>
+                               </div>
+                               </div>
+                               
+                               
+                               </div>
+                               
+                               
+                               </div>
+
+                            <div class="d-none d-lg-block col-lg-3 wd-bg-color-orange ">
+                                        <!-- side bar div -->
+                                        where am i 
+                      </div>
+
+                      </div>
+
+
+          </div>
+        </div>
+      </div>
+      
+
+
+
+</body>

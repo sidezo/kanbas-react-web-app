@@ -1,0 +1,91 @@
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 700px;
+  }
+  
+  body * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wd-main-css-heading {
+    color: green;
+    background-color: yellow;
+  }
+  
+  .wd-fg-color-black {
+    color: black;
+  }
+  .wd-fg-color-white {
+    color: white;
+  }
+  .wd-fg-color-blue {
+    color: #7070ff;
+  }
+  .wd-fg-color-red {
+    color: #ff7070;
+  }
+  .wd-fg-color-green {
+    color: green;
+  }
+  
+  .wd-bg-color-yellow {
+    background-color: #ffff07;
+  }
+  .wd-bg-color-blue {
+    background-color: #7070ff;
+  }
+  .wd-bg-color-red {
+    background-color: #ff7070;
+  }
+  .wd-bg-color-green {
+    background-color: green;
+  }
+  .wd-bg-color-black {
+    background-color: black;
+  }
+  .wd-bg-color-orange {
+    background-color: orange;
+  }
+
+
+
+  .wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+
+
+  /* .container-fluid {
+    height: 100%;
+}
+
+.container-fluid > .row {
+    height: 100%;
+}
+
+.container-fluid > .row > .col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* this is for rows except breadcrumbs to fully
+ */
+
+.container-fluid > .row > .col > .row:not(.wd-breadcrumbs) {
+    flex-grow: 1;
+} 
+
+.wd-breadcrumbs {
+  padding: 20px 20px; /* Padding on top/bottom and left/right respectively. Adjust as required. */
+  margin: 0; /* Remove any default margin. */
+  height: 80px; /* Adjust the height as required. */
+  box-sizing: border-box; /* This ensures that padding and border are included in the element's total width and height. */
+  align-items: center; /* Align content vertically centered if using flex in parent */
+}
