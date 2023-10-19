@@ -1,41 +1,37 @@
 button.dropdown-toggle i.fa-check-circle-o {
-    color: green;
+  color: green;
 }
 
-button i.fa-plus{
-    color: white
+button i.fa-plus {
+  color: white;
 }
 
 .wd-modules-buttons {
-    margin-top: 10px;     /* Adds margin to the top */
-    margin-right: 0;   /* Adds margin to the right */
-    margin-bottom: 10px;  /* Adds margin to the bottom */
-    margin-left: 0; 
+  margin-top: 10px; /* Adds margin to the top */
+  margin-right: 0; /* Adds margin to the right */
+  margin-bottom: 10px; /* Adds margin to the bottom */
+  margin-left: 0;
 }
 .wd-modules-buttons .btn-secondary {
-    background-color: #F0F0F0;
-    border: none;
-    color: black;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #f0f0f0;
+  border: none;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
- 
+
 .wd-modules-buttons .btn-danger {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
-}
- 
-
-.wd-modules-lists {
-
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .wd-modules-lists .titlebar {
-    background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .wd-modules-lists i.fa-check-circle {
-    color: green;
+  color: green;
 }
 
-.wd-modules-lists .list-group, .list-group-item {
-    border-radius: 0 !important;
+.wd-modules-lists .list-group,
+.list-group-item {
+  border-radius: 0 !important;
 }
