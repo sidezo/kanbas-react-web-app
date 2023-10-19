@@ -1,0 +1,46 @@
+button.dropdown-toggle i.fa-check-circle-o {
+  color: green;
+}
+
+button i.fa-plus {
+  color: white;
+}
+
+.wd-modules-buttons {
+  margin-top: 10px; /* Adds margin to the top */
+  margin-right: 0; /* Adds margin to the right */
+  margin-bottom: 10px; /* Adds margin to the bottom */
+  margin-left: 0;
+}
+
+.wd-modules-buttons .btn {
+  margin-right: 5px; /* Add space to the right of each button */
+}
+
+/* Since the last button might also get a margin on its right, you can reset it */
+.wd-modules-buttons .btn:last-child {
+  margin-right: 0;
+}
+.wd-modules-buttons .btn-secondary {
+  background-color: #f0f0f0;
+  border: none;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wd-modules-buttons .btn-danger {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wd-modules-lists .titlebar {
+  background-color: #f0f0f0;
+}
+
+.wd-modules-lists i.fa-check-circle {
+  color: green;
+}
+
+.wd-modules-lists .list-group,
+.list-group-item {
+  border-radius: 0 !important;
+}
