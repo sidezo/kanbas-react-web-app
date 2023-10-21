@@ -1,0 +1,38 @@
+.Dashboard .EllipsisVertical {
+  font-size: large;
+  color: rgb(191, 191, 195);
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  cursor: pointer;
+  z-index: 1; /* Ensure it overlaps the card content if necessary */
+}
+.Dashboard .card-title {
+  color: rgb(28, 105, 173);
+  font-size: medium;
+}
+
+.Dashboard .card-text {
+  color: rgb(181, 183, 183);
+  font-size: small;
+}
+
+.Dashboard .PiNotePencil {
+  color: rgb(130, 131, 133);
+  font-size: larger;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.Dashboard .btn.btn-primary {
+  background-color: white;
+  border-color: white;
+  border-radius: 5%;
+  padding-left: 4px;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  color: rgb(116, 115, 115);
+  font-weight: 300;
+  font-size: larger;
+}

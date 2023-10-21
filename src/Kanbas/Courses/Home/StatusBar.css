@@ -41,10 +41,20 @@
 
 .StatusBar-bottom .icons {
     margin-left: 3px;
-    margin-right: 8px ;
+    margin-right: 6px ;
     font-size: 20px;
     color: red;
 }
+
+.StatusBar-bottom .close-icon {
+    color: rgb(179, 179, 182);
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    cursor: pointer;
+    z-index: 1; /* Ensure it overlaps the card content if necessary */
+}
+
 
 .StatusBar-bottom .body-content-title {
     color: red;
@@ -52,6 +62,6 @@
 
 
 .StatusBar-bottom .body-content-title .body-content-details{
-    margin-left: 15px;
+    margin-left: 25px;
     color: black;
 }

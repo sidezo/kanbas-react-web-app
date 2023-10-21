@@ -5,6 +5,7 @@ import { AiFillAlert } from "react-icons/ai";
 import { FaFileImport } from "react-icons/fa";
 import { BsBoxArrowRight } from "react-icons/bs";
 import { PiNumberCircleFiveFill } from "react-icons/pi";
+import { FaTimes } from "react-icons/fa";
 function StatusBar() {
   return (
     <div className="container">
@@ -64,7 +65,8 @@ function StatusBar() {
         <div className="col-12 StatusBar-bottom">
           <h4>To Do</h4>
           <hr />
-          <div className="card mb-2">
+
+          <div className="card mb-2 position-relative">
             <div className="card-body body-content-title">
               <PiNumberCircleFiveFill className="icons" />
               Grade A1 - ENV + HTML <br />
@@ -72,8 +74,9 @@ function StatusBar() {
                 100 points • Sep 18 at 11:59pm
               </div>
             </div>
+            <FaTimes className="close-icon" />
           </div>
-          <div className="card mb-2">
+          <div className="card mb-2 position-relative">
             <div className="card-body body-content-title">
               <PiNumberCircleFiveFill className="icons" />
               Grade A2 - CSS + BOOTSTRAP <br />
@@ -81,6 +84,7 @@ function StatusBar() {
                 100 points • Oct 2 at 11:59pm
               </div>
             </div>
+            <FaTimes className="close-icon" />
           </div>
         </div>
       </div>

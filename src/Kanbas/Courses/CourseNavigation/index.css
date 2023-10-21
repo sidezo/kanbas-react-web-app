@@ -2,7 +2,6 @@
   background-color: white;
   list-style: none;
   padding: 0px;
-  width: 100px;
   margin: 0px;
   margin-left: 10px;
   border-radius: 0px;
@@ -37,4 +36,18 @@
 .wd-course-navigation a {
   color: red;
   text-decoration: none;
+}
+
+
+.wd-course-navigation .link-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wd-course-navigation .hide-icon {
+    margin-left: 10px;  /* Add some spacing between text and icon */
+    cursor: pointer;    /* Make it look clickable */
+    color: rgb(170, 172, 173);
 }

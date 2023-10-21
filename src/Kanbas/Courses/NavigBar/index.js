@@ -2,6 +2,7 @@ import { FiMenu } from "react-icons/fi";
 import "./index.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiGlasses } from "react-icons/bi";
+import Assignments from "../Assignments";
 function NavigBar({ courseName, screen }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
@@ -36,13 +37,15 @@ function NavigBar({ courseName, screen }) {
           </li>
         </ul>
       </div>
-
       {/* this button only shows up on large screens, otherwise
        will colide with bootstrap dropdown menu, future need to 
        implement it inside dropdown menu after large */}
-      <button className="studentView btn btn-outline-secondary ml-auto d-none d-lg-block">
-        <BiGlasses /> Student View
-      </button>
+      
+      {screen !== "Assignments" &&
+        <button className="studentView btn btn-outline-secondary ml-auto d-none d-lg-block">
+          <BiGlasses /> Student View
+        </button>
+      }
     </nav>
   );
 }

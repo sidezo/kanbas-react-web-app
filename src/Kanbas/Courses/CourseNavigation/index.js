@@ -1,5 +1,6 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import "./index.css";
+import { FaEyeSlash } from "react-icons/fa";
 
 function CourseNavigation() {
   const links = [
@@ -21,8 +22,6 @@ function CourseNavigation() {
     "Collaborations",
     "Syllabus",
     "Settings",
-
-
   ];
   const { courseId } = useParams();
   const { pathname } = useLocation();
@@ -34,7 +33,11 @@ function CourseNavigation() {
           to={`/Kanbas/Courses/${courseId}/${link}`}
           className={`list-group-item ${pathname.includes(link) && "active"}`}
         >
-          {link}
+          <div className="link-content">
+            {link}
+            {/* here if the index is larger than 7, then we add hide icon */}
+            {index > 11 && <FaEyeSlash className="hide-icon" />}
+          </div>
         </Link>
       ))}
     </div>

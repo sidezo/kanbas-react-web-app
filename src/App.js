@@ -10,7 +10,9 @@ function App() {
     <HashRouter>
       <div>
         <Routes>
-          <Route path="/" element={<Navigate to="Kanbas" />} />
+          {/* changed default route to Labs, 
+          so TA first see labs,then click to kanbas */}
+          <Route path="/" element={<Navigate to="Labs" />} />
           <Route path="/Hello" element={<HelloWorld />} />
           <Route path="/Labs/*" element={<Labs />} />
           <Route path="/Kanbas/*" element={<Kanbas />} />
