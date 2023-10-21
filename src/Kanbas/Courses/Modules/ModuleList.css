@@ -1,0 +1,53 @@
+.module-item {
+  border: 1px solid #e0e0e0; /* subtle border */
+  margin-bottom: 50px;
+  background-color: #f0f0f0; /* white background */
+  border-radius: 0px; /* rounded corners */
+  border-color: #b9b5b5;
+  height: 90px;
+}
+
+.module-item .ellipsis-icon {
+  margin-right: 2px;
+  font-size: 20px;
+  color: #949191; /* Adjust color as needed */
+}
+.module-item .AiFillCheckCircle {
+  color: green;
+  font-size: 28px;
+}
+.module-item .fa-plus {
+  color: rgb(181, 178, 178);
+}
+.module-item .module-title {
+  font-size: 18px; /* Adjust as needed */
+  color: #333; /* Adjust color as needed */
+}
+
+.module-item .module-actions .btn {
+  border-radius: 50%; /* Makes the buttons rounded */
+  width: 45px; /* Adjust width as needed */
+  height: 45px; /* Adjust height as needed */
+}
+
+.module-item .module-actions .btn-light {
+  background-color: #f0f0f0; /* Adjust as needed */
+  border: none;
+}
+
+.module-item .custom-dropdown-toggle::before {
+  content: "\25B6"; /* Right-pointing triangle (▶) */
+  display: inline-block;
+  margin-right: 10px; /* Spacing between the arrow and the text */
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.module-item .show .custom-dropdown-toggle::before {
+  content: "\25BC"; /* Down-pointing triangle (▼) */
+  font-size: 20px;
+}
+
+.module-item .left.dropdown-toggle::after {
+  display: none;
+}

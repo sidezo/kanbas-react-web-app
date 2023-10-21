@@ -1,0 +1,57 @@
+.StatusBar-top .list-group {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Remove any default margin or padding from list items */
+.StatusBar-top .list-group-item {
+  padding-left: 0px;
+  margin-left: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  background-color: white;
+  border-color: white;
+  text-align: left; /* This makes sure the text is aligned to the left */
+}
+
+.StatusBar-top .list-group-item .btn {
+  background-color: rgb(231, 233, 235);
+  border-color: rgb(187, 185, 185);
+  border-radius: 5%;
+  padding-left: 4px;
+  margin:0;
+  width: 100%;
+  text-align: left  ;
+}
+
+.StatusBar-top .list-group-item .btn .icons {
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+.StatusBar-bottom .card {
+    border-color: white ;
+}
+.StatusBar-bottom .card .card-body{
+    padding:0px; ;
+}
+
+.StatusBar-bottom .icons {
+    margin-left: 3px;
+    margin-right: 8px ;
+    font-size: 20px;
+    color: red;
+}
+
+.StatusBar-bottom .body-content-title {
+    color: red;
+}
+
+
+.StatusBar-bottom .body-content-title .body-content-details{
+    margin-left: 15px;
+    color: black;
+}
