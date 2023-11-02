@@ -36,3 +36,14 @@
   font-weight: 300;
   font-size: larger;
 }
+.updateAdd {
+  margin-bottom: 20px;
+}
+
+.updateAdd .buttonAdd {
+  margin-left: 5px;
+}
+
+.Dashboard .buttonDanger {
+  margin-right: 5px;
+}

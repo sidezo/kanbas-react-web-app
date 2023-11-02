@@ -10,9 +10,9 @@ import { useLocation } from "react-router";
 import NavigBar from "./NavigBar";
 import { Navbar } from "react-bootstrap";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
   const [fisrt, kanbas, cs, id, screen] = pathname.split("/");
 

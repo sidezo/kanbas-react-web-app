@@ -24,13 +24,13 @@
   color: #333; /* Adjust color as needed */
 }
 
-.module-item .module-actions .btn {
+
+
+
+.module-item .module-actions .btn-light {
   border-radius: 50%; /* Makes the buttons rounded */
   width: 45px; /* Adjust width as needed */
   height: 45px; /* Adjust height as needed */
-}
-
-.module-item .module-actions .btn-light {
   background-color: #f0f0f0; /* Adjust as needed */
   border: none;
 }
@@ -50,4 +50,29 @@
 
 .module-item .left.dropdown-toggle::after {
   display: none;
+}
+
+.module-item .description-container {
+  margin-left: 20px;
+  max-width: 150px; /* you can adjust this value */
+  white-space: normal; /* this ensures the text wraps */
+  overflow-wrap: break-word; /* this breaks the word to the next line if it's too long */
+  color: #767373;
+  /* Additional Styling for Description */
+  font-size: 11px; /* Slightly smaller font size */
+  font-style: italic; /* Make the text italicized */
+  padding: 8px; /* Add some padding around the text */
+  background-color: #f9f9f9; /* A very light grey background */
+  border: 1px solid #e1e1e1; /* A soft border */
+  border-radius: 4px; /* Rounded corners for the border */
+}
+
+.add-description-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1e1e1; /* Border around the entire container */
+  padding: 10px; /* Some padding for spacing */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 12px;
 }
