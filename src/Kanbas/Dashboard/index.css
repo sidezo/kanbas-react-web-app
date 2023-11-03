@@ -16,6 +16,9 @@
   color: rgb(181, 183, 183);
   font-size: small;
 }
+.Dashboard .fixedWidthCard {
+  width: 500px;  /* Adjust the width as needed */
+}
 
 .Dashboard .PiNotePencil {
   color: rgb(130, 131, 133);

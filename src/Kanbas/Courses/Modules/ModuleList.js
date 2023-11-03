@@ -129,14 +129,14 @@ function ModuleList() {
               {/* Right Side - Action Buttons */}
               <div className="module-actions">
                 <button
-                  className="btn btn-danger"
+                  className="btn btn-danger btn-sm"
                   onClick={() => dispatch(deleteModule(module._id))}
                 >
-                   Delete
+                  Delete
                 </button>
 
                 <button
-                  className="btn btn-success"
+                  className="btn btn-success btn-sm"
                   onClick={() => dispatch(setModule(module))}
                 >
                   Edit

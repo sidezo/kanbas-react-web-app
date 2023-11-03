@@ -80,7 +80,10 @@ function Dashboard({
 
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {courses.map((course, index) => (
-          <div key={course._id} className="col Dashboard">
+          <div
+            key={course._id}
+            className="col-xl-4 col-lg-6 col-sm-6 col-md-6 col-xs-6 mb-4 Dashboard"
+          >
             <div className="card h-100 position-relative">
               <IoEllipsisVerticalSharp className="EllipsisVertical" />
               <img
@@ -97,7 +100,7 @@ function Dashboard({
                   {course.name}
                   {/* deleting button of A4 */}
                   <button
-                    className="btn btn-warning float-end"
+                    className="btn btn-warning float-end btn-sm"
                     onClick={(event) => {
                       event.preventDefault();
                       deleteCourse(course._id);
@@ -107,7 +110,7 @@ function Dashboard({
                   </button>
                   {/* editing button of A4, copies the course into the form above*/}
                   <button
-                    className="btn btn-danger float-end buttonDanger"
+                    className="btn btn-danger float-end buttonDanger btn-sm"
                     onClick={(event) => {
                       event.preventDefault();
                       setCourse(course);
