@@ -1,4 +1,4 @@
-import db from "../../Kanbas/Database";
+//import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
@@ -9,12 +9,23 @@ import Grades from "./Grades";
 import { useLocation } from "react-router";
 import NavigBar from "./NavigBar";
 import { Navbar } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import * as client from "./client";
 
 function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  //const course = courses.find((course) => course._id === courseId);
+  const [course, setCourse] = useState({});    //this is an empty object
   const { pathname } = useLocation();
   const [fisrt, kanbas, cs, id, screen] = pathname.split("/");
+
+  const fetchCourse = async () => {
+    const course = await client.fetchCourse(courseId);
+    setCourse(course);
+  }
+ useEffect(() => {
+    fetchCourse();
+  } , []);
 
   return (
     <div className="container-fluid">

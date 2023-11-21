@@ -4,6 +4,7 @@ import Courses from "./Courses";
 import Account from "./Account";
 import Dashboard from "./Dashboard";
 import db from "./Database";
+import axios from "axios";
 import { useState } from "react";
 import "./index.css";
 import store from "./store";
