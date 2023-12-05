@@ -1,6 +1,9 @@
 import axios from "axios";
 //export const BASE_API = process.env.REACT_APP_BASE_API_URL;  //this is one way
-export const BASE_API = "http://localhost:4000"; //this is our way
+//export const BASE_API = "http://localhost:4000"; //this is our way
+
+export const BASE_API = "https://kanbas-node-server-app-a6-ymp5.onrender.com";
+
 export const USERS_API = `${BASE_API}/api/users`;
 
 const request = axios.create({
